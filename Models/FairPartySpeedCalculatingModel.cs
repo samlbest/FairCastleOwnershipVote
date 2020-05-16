@@ -1,8 +1,9 @@
-﻿using TaleWorlds.CampaignSystem;
+﻿using HarmonyLib;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.SandBox.GameComponents.Map;
 using TaleWorlds.Core;
 
-namespace FairCastleOwnershipVote
+namespace FairCastleOwnershipVote.Models
 {
     public class FairPartySpeedCalculatingModel : DefaultPartySpeedCalculatingModel
     {
