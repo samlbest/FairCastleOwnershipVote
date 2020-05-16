@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="$(SolutionDir)\FairCastleOwnershipVote.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="$(MOUNT_AND_BLADE_BIN_DIR)TaleWorlds.*.dll" Exclude="$(MOUNT_AND_BLADE_BIN_DIR)TaleWorlds.Starter.DotNetCore.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+
+	<Target Name="CopyBinariesToModuleDir" AfterTargets="PostBuildEvent">
+		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MOD_FOLDER)\bin\Win64_Shipping_Client\" />
+		<Copy SourceFiles="$(ProjectDir)\SubModule.xml" DestinationFolder="$(MOD_FOLDER)" />
+	</Target>
+
+</Project>
