@@ -1,24 +1,24 @@
 ﻿using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
+using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 
 namespace FairCastleOwnershipVote
 {
     public class FairCastleOwnershipVoteSubModule : MBSubModuleBase
     {
-        public override void OnCampaignStart(Game game, object starterObject)
+  
+        protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
-            if (starterObject is CampaignGameStarter campaignGameStarter)
-            {
-                AddModels(campaignGameStarter);
-            }
+            base.OnGameStart(game, gameStarterObject);
 
-            base.OnCampaignStart(game, starterObject);
+            AddModels(gameStarterObject as CampaignGameStarter);
         }
 
+     
         private void AddModels(CampaignGameStarter gameStarter)
         {
-            gameStarter.AddModel(new FairInventoryCapacityModel());
+            gameStarter.AddModel(new FairPartySpeedCalculatingModel());
         }
     }
 }

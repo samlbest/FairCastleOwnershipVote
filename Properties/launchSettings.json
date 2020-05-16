@@ -4,7 +4,8 @@
       "commandName": "Executable",
       "executablePath": "E:\\Games\\steamapps\\common\\Mount & Blade II Bannerlord\\bin\\Win64_Shipping_Client\\Bannerlord.exe",
       "commandLineArgs": "/singleplayer _MODULES_*Native*SandBoxCore*CustomBattle*SandBox*StoryMode*FairCastleOwnershipVote*_MODULES_",
-      "workingDirectory": "E:\\Games\\steamapps\\common\\Mount & Blade II Bannerlord\\bin\\Win64_Shipping_Client"
+      "workingDirectory": "E:\\Games\\steamapps\\common\\Mount & Blade II Bannerlord\\bin\\Win64_Shipping_Client",
+      "nativeDebugging": false
     }
   }
 }
