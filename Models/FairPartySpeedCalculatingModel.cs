@@ -5,11 +5,6 @@ namespace FairCastleOwnershipVote.Models
 {
     public class FairPartySpeedCalculatingModel : DefaultPartySpeedCalculatingModel
     {
-
-    }
-
-    public class FairVoteModel : DefaultClanFinanceModel
-    {
-
+        // placeholder
     }
 }
