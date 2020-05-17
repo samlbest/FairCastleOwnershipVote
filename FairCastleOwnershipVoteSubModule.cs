@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using FairCastleOwnershipVote.Models;
 using HarmonyLib;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
@@ -21,14 +22,22 @@ namespace FairCastleOwnershipVote
             catch (Exception ex)
             {
                 FileLog.Log($"Error on PatchAll: {ex}");
+                throw;
             }
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
             base.OnGameStart(game, gameStarterObject);
-
-            AddModels(gameStarterObject as CampaignGameStarter);
+            try
+            { 
+                AddModels(gameStarterObject as CampaignGameStarter);
+            }
+            catch (Exception ex)
+            {
+                FileLog.Log($"Error on AddModels: {ex}");
+                throw;
+            }
         }
 
      

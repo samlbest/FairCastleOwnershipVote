@@ -12,8 +12,12 @@
 		</Reference>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="Lib.Harmony" Version="2.0.1" />
+	</ItemGroup>
+
 	<Target Name="CopyBinariesToModuleDir" AfterTargets="PostBuildEvent">
-		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MOD_FOLDER)\bin\Win64_Shipping_Client\" />
+		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MOD_FOLDER)bin\Win64_Shipping_Client\" />
 		<Copy SourceFiles="$(ProjectDir)\SubModule.xml" DestinationFolder="$(MOD_FOLDER)" />
 	</Target>
 
