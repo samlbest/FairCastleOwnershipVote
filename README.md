@@ -23,7 +23,7 @@ Divided by:
 
 ## Installing the module
 
-Download the latest release. Extract the zip file to the Modules directory of your Mount & Blade directory. Or, if you're building the code, just following the Building the solution instructions and it will copy the necessary files to your Modules directory.
+Download the latest release. Extract the zip file to the Modules directory of your Mount & Blade directory. You should have a folder named FairCastleOwnershipVote. Or, if you're building the code, just following the Building the solution instructions and it will copy the necessary files to your Modules directory.
 
 ## Building the solution
 

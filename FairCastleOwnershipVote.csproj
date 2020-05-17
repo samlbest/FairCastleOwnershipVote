@@ -9,7 +9,6 @@
 	<PropertyGroup>
 		<Title>Fair Castle Ownership Vote</Title>
 		<Authors>Sam Best</Authors>
-		<Company />
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/samlbest/FairCastleOwnershipVote</RepositoryUrl>
 		<Description>A mod for Mount &amp; Blade II: Bannerlord which makes it twice as likely for the player clan to be one of the candidates in the vote on new owner of a successfully besieged settlement.</Description>
